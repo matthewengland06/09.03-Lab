@@ -3,23 +3,65 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>09.03 Lab - JavaScript in the Browser</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <h1>Starting Lineup</h1>
 
-  <h2 id="joke-display"></h2>
+  <form id="form">
+    <p>
+      <fieldset>
+        <legend>Status:</legend>
+        <input type="radio" id="draft" name="status" value="Draft">
+        <label for="draft">Draft</label>
+
+        <input type="radio" id="final" name="status" value="Final" checked>
+        <label for="final">Final</label>
+      </fieldset>
+    </p>
+
+    <p>
+      <label for="date">Date: </label>
+      <select id="date" name="date">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+
+    <p>
+      <fieldset>
+        <legend>Players:</legend>
+        <input type="checkbox" id="p1" name="players" value="Aarav Agarwal">
+        <label for="p1">Aarav Agarwal</label><br>
+
+        <input type="checkbox" id="p2" name="players" value="Ava Johnson">
+        <label for="p2">Ava Johnson</label><br>
+
+        <input type="checkbox" id="p3" name="players" value="Julio Ortiz">
+        <label for="p3">Julio Ortiz</label><br>
+
+        <input type="checkbox" id="p4" name="players" value="Liam Rubio">
+        <label for="p4">Liam Rubio</label><br>
+
+        <input type="checkbox" id="p5" name="players" value="Emma Witherspoon">
+        <label for="p5">Emma Witherspoon</label><br>
+      </fieldset>
+    </p>
+
+    <p>
+      <input type="submit" id="submitButton" value="Submit">
+    </p>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
